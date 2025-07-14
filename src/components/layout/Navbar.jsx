@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 
 function Navbar() {
   return (
-    <div className="flex justify-between p-4 w-full fixed top-0 z-50 bg-white/10 backdrop-blur-sm">
+    <div className="flex justify-between p-4 w-full fixed top-0 z-50 bg-black/50 backdrop-blur-xs">
       {/* Logo */}
       <div>
         <div className="flex items-center gap-0.5">

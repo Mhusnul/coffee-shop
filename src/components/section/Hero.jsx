@@ -3,7 +3,12 @@ import coffe from "../../assets/4.png";
 
 function Hero() {
   return (
-    <div className="hero min-h-screen">
+    <div
+      className="hero min-h-screen"
+      style={{
+        backgroundImage: `url(${coffe})`,
+      }}
+    >
       <div className="hero-overlay"></div>
       <div className="hero-content text-[#F0F2BD] text-center">
         <div>
