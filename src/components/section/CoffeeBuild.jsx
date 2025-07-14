@@ -9,7 +9,6 @@ import {
   Coffee,
   Beer,
 } from "lucide-react";
-import { div } from "three/tsl";
 
 function CoffeeBuild() {
   const leftItems = [
@@ -49,7 +48,7 @@ function CoffeeBuild() {
   ];
 
   return (
-    <div className="text-center py-5 px-5 bg-[#4B352A]">
+    <div className="text-center py-5 px-5  min-h-screen flex flex-col justify-center items-center">
       <h1 className="text-[#B2CD9C] font-semibold italic">What Happens Here</h1>
       <p className="text-4xl font-bold text-[#F0F2BD]">COFFE BUILD YOUR BASE</p>
       <hr className=" w-16 mt-4 text-[#F0F2BD] mx-auto" />
@@ -61,7 +60,11 @@ function CoffeeBuild() {
               key={idx}
               className="md:flex md:flex-row-reverse items-center gap-2"
             >
-              <Icon size={80} className="text-[#F0F2BD] mx-auto" />
+              <Icon
+                size={80}
+                strokeWidth={0.75}
+                className="text-[#F0F2BD] mx-auto"
+              />
               <div className="w-80">
                 <h1 className="text-lg font-bold uppercase text-[#F0F2BD] ">
                   {title}
@@ -81,7 +84,11 @@ function CoffeeBuild() {
         <div className="md:text-left flex flex-col gap-2 items-center">
           {rightItems.map(({ icon: Icon, title, desc }, idx) => (
             <div key={idx} className="md:flex items-center gap-2">
-              <Icon size={80} className="text-[#F0F2BD] mx-auto" />
+              <Icon
+                size={80}
+                strokeWidth={0.75}
+                className="text-[#F0F2BD] mx-auto"
+              />
               <div className="w-80">
                 <h1 className="text-lg font-bold uppercase text-[#F0F2BD] ">
                   {title}
