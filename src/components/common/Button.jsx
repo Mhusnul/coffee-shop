@@ -12,7 +12,7 @@ function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`bg-[#220d00] text-white px-5 py-2 hover:bg-[#fce2d7] hover:text-[#220d00] transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
+      className={`bg-[#4B352A] text-[#F0F2BD] px-5 py-2 hover:bg-[#fce2d7] hover:text-[#4B352A] transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
     >
       {children}
     </button>
