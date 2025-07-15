@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import layout from "../../assets/cofe.png";
+import { motion, useInView } from "framer-motion";
 
 function Menu({ id }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  // Variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 },
+  };
+
   const menuItems = [
     {
       name: "CAFFE LATTE",
@@ -86,9 +106,18 @@ function Menu({ id }) {
           <hr className=" w-16 mt-4 text-[#F0F2BD] mx-auto" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
-          <div>
+          <motion.div
+            ref={ref}
+            variants={containerVariants}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+          >
             {drinks.map((item, index) => (
-              <div className="flex justify-between mb-2" key={index}>
+              <motion.div
+                variants={itemVariants}
+                className="flex justify-between mb-2"
+                key={index}
+              >
                 <div className="">
                   <h2 className="text-[#F0F2BD] font-semibold">{item.name}</h2>
                   <hr className="text-[#F0F2BD]" />
@@ -97,12 +126,21 @@ function Menu({ id }) {
                 <div className="text-right text-[#F0F2BD]">
                   <p>{item.price}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            variants={containerVariants}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+          >
             {desserts.map((item, index) => (
-              <div className="flex justify-between mb-2" key={index}>
+              <motion.div
+                variants={itemVariants}
+                className="flex justify-between mb-2"
+                key={index}
+              >
                 <div className="">
                   <h2 className="text-[#F0F2BD] font-semibold">{item.name}</h2>
                   <hr className="text-[#F0F2BD]" />
@@ -111,13 +149,13 @@ function Menu({ id }) {
                 <div className="text-right text-[#F0F2BD]">
                   <p>{item.price}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="absolute bottom-0  ">
-        <img className="blur-sm" src={layout} alt="cofe" />
+        <img className="blur-xs" src={layout} alt="cofe" />
       </div>
     </div>
   );
