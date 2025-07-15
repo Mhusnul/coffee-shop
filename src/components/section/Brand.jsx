@@ -1,9 +1,9 @@
 import React from "react";
 import layout from "../../assets/cofe-3.png";
 
-function Brand() {
+function Brand({ id }) {
   return (
-    <div className="relative w-full h-[90vh]">
+    <div id={id} className="relative w-full h-[90vh]">
       {/* Background Image */}
       <img
         src={layout}

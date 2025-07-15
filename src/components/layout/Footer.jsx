@@ -1,9 +1,10 @@
 import React from "react";
 import footer from "../../assets/bg.png";
 
-function Footer() {
+function Footer({ id }) {
   return (
     <div
+      id={id}
       style={{
         backgroundImage: `url(${footer})`,
         backgroundSize: "cover",

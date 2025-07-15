@@ -1,9 +1,10 @@
 import React from "react";
 import coffe from "../../assets/4.png";
 
-function Hero() {
+function Hero({ id }) {
   return (
     <div
+      id={id}
       className="hero min-h-screen"
       style={{
         backgroundImage: `url(${coffe})`,

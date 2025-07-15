@@ -4,9 +4,9 @@ import grid2 from "../../assets/grid-2.png";
 import grid3 from "../../assets/grid-3.png";
 import grid4 from "../../assets/6.png";
 
-function GridColaction() {
+function GridColaction({ id }) {
   return (
-    <div className=" md:h-[600px]">
+    <div id={id} className="md:h-[600px]">
       <div className="grid grid-cols-6 gap-1 p-4 h-full">
         <div className="bg-amber-200 col-span-3 overflow-hidden">
           <img src={grid1} alt="" className="object-cover h-full w-full" />

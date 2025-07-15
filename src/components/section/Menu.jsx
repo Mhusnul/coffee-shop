@@ -1,7 +1,7 @@
 import React from "react";
 import layout from "../../assets/cofe.png";
 
-function Menu() {
+function Menu({ id }) {
   const menuItems = [
     {
       name: "CAFFE LATTE",
@@ -71,7 +71,10 @@ function Menu() {
   const desserts = menuItems.slice(6);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative">
+    <div
+      id={id}
+      className="min-h-screen flex flex-col items-center justify-center relative"
+    >
       <div className="z-50">
         <div className="text-center mb-8">
           <h1 className="text-[#B2CD9C] font-semibold italic">

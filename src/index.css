@@ -3,11 +3,6 @@
   themes: light;
 }
 
-/* Custom spacing utilities */
-.pl-22 {
-  padding-left: 5.5rem;
-}
-
-.pr-22 {
-  padding-right: 5.5rem;
+html {
+  scroll-behavior: smooth;
 }

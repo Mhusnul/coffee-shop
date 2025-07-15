@@ -13,14 +13,15 @@ function Home() {
   return (
     <div className="min-h-screen bg-[#4B352A] -z-50">
       <Navbar />
-      <Hero />
-      <CoffeeBuild />
-      <GridColaction />
-      <Menu />
-      <Service />
-      <Quotes />
-      <Brand />
-      <Footer />
+      <Hero id="home" />
+      <CoffeeBuild id="coffee-menu" />
+      <GridColaction id="collection" />
+      <Menu id="menu" />
+      <Service id="about" />
+      <Quotes id="quotes" />
+      <Brand id="brand" />
+
+      <Footer id="contact" />
     </div>
   );
 }

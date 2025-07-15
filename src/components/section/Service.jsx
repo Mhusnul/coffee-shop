@@ -7,9 +7,12 @@ import animate4 from "../../assets/animate-(5).png";
 import grid1 from "../../assets/grid-1.png";
 import logo from "../../assets/logo-coffe.png";
 
-function Service() {
+function Service({ id }) {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div
+      id={id}
+      className="min-h-screen flex flex-col justify-center items-center"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         <div className=" bg-[#F0F2BD] backdrop-blur-lg p-5 flex items-center justify-center">
           <div>
