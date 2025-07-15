@@ -7,7 +7,6 @@ import Menu from "../components/section/Menu";
 import Service from "../components/section/Service";
 import Quotes from "../components/section/Quotes";
 import Footer from "../components/layout/Footer";
-import Brand from "../components/section/Brand";
 
 function Home() {
   return (
@@ -19,8 +18,6 @@ function Home() {
       <Menu id="menu" />
       <Service id="about" />
       <Quotes id="quotes" />
-      <Brand id="brand" />
-
       <Footer id="contact" />
     </div>
   );

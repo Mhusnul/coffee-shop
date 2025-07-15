@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import animate1 from "../../assets/animate-(2).png";
 import animate2 from "../../assets/animate-(3).png";
@@ -27,7 +28,13 @@ function Service({ id }) {
               Read More <ArrowBigRightDash size={28} strokeWidth={0.75} />
             </p>
           </div>
-          <img className="h-52" src={animate1} alt="animasi" />
+          <motion.img
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            className="h-52"
+            src={animate1}
+            alt="animasi"
+          />
         </div>
 
         <div className=" bg-[#B2CD9C] hover:bg-[#F0F2BD] hover:text-[#B2CD9C] p-5 flex items-center justify-center transition-colors duration-300">
@@ -43,7 +50,13 @@ function Service({ id }) {
               Read More <ArrowBigRightDash size={28} strokeWidth={0.75} />
             </p>
           </div>
-          <img className="h-52" src={animate3} alt="" />
+          <motion.img
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            className="h-52"
+            src={animate3}
+            alt=""
+          />
         </div>
 
         <div className=" bg-[#B2CD9C] hover:bg-[#F0F2BD] hover:text-[#F0F2BD] flex items-center justify-center h-80 overflow-hidden">
@@ -51,7 +64,13 @@ function Service({ id }) {
         </div>
 
         <div className=" bg-[#B2CD9C] hover:bg-[#F0F2BD] hover:text-[#B2CD9C] flex items-center justify-center h-80 transition-colors duration-300">
-          <img className="h-72" src={logo} alt="" />
+          <motion.img
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            className="h-72"
+            src={logo}
+            alt="logo"
+          />
         </div>
 
         <div className=" bg-[#F0F2BD] flex items-center justify-center h-80 overflow-hidden">
@@ -71,7 +90,13 @@ function Service({ id }) {
               Read More <ArrowBigRightDash size={28} strokeWidth={0.75} />
             </p>
           </div>
-          <img className="h-52" src={animate2} alt="" />
+          <motion.img
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            className="h-52"
+            src={animate2}
+            alt=""
+          />
         </div>
       </div>
     </div>

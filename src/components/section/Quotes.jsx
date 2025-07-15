@@ -4,6 +4,7 @@ import grid1 from "../../assets/2.png";
 import grid2 from "../../assets/3.png";
 import grid3 from "../../assets/4.png";
 import grid4 from "../../assets/5.png";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -53,13 +54,17 @@ function Quotes() {
               />
 
               {/* Quote Overlay */}
-              <div className="absolute bg-[#4B352A]/50 backdrop-blur-sm rounded-xl p-8 max-w-xl text-center text-[#F0F2BD]">
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.95 }}
+                className="absolute bg-[#4B352A]/50 backdrop-blur-sm rounded-xl p-8 max-w-xl text-center text-[#F0F2BD]"
+              >
                 <div className="mb-2">
                   <Quote color="#F0F2BD" strokeWidth={2} />
                 </div>
                 <p className="italic text-lg">{item.quote}</p>
                 <p className="mt-4 font-semibold">{item.author}</p>
-              </div>
+              </motion.div>
 
               {/* Navigation */}
               <div className="absolute left-8 right-8 top-1/2 flex justify-between transform -translate-y-1/2">
