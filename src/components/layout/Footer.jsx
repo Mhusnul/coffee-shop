@@ -16,7 +16,7 @@ function Footer({ id }) {
         backgroundPosition: "center",
       }}
     >
-      <footer className="footer sm:footer-horizontal bg-black/50 text-white p-10 backdrop-blur-xs">
+      <footer className="footer sm:footer-horizontal bg-card/50 text-foreground p-10 backdrop-blur-sm border-t border-border">
         <div id={id} className="relative w-full">
           {/* Content */}
           <motion.div
@@ -25,47 +25,47 @@ function Footer({ id }) {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, ease: "easeInOut" }}
             id="brand-content"
-            className=" relative flex flex-col justify-center items-center h-full text-center text-[#F0F2BD] px-4 z-50"
+            className="relative flex flex-col justify-center items-center h-full text-center text-foreground px-4 z-50"
           >
             <h2 className="text-xl font-semibold italic mb-2">Our Signature</h2>
             <h1 className="text-4xl md:text-5xl font-bold uppercase mb-4">
               BRAND VALUES
             </h1>
-            <hr className="w-16 border-amber-300 mb-6" />
-            <p className="max-w-2xl text-base md:text-lg text-[#fdfde3]">
-              We don’t just serve coffee we craft experiences. Our brand
+            <hr className="w-16 border-primary mb-6" />
+            <p className="max-w-2xl text-base md:text-lg text-muted-foreground">
+              We don't just serve coffee we craft experiences. Our brand
               represents warmth, passion, and the pursuit of perfect moments.
               From bean to cup, every detail is intentional.
             </p>
           </motion.div>
         </div>
         <nav className="leading-relaxed">
-          <h6 className="footer-title">OPENING HOURS</h6>
-          <a className="link link-hover">MONDAY – Closed</a>
-          <a className="link link-hover">TUESDAY – 09:00 – 22:00</a>
-          <a className="link link-hover">WEDNESDAY – 09:00 – 22:00</a>
-          <a className="link link-hover">THURSDAY – 09:00 – 22:00</a>
-          <a className="link link-hover">FRIDAY – 09:00 – 01:00 ✦</a>
-          <a className="link link-hover">SATURDAY – 12:00 – 01:00 ✦</a>
-          <a className="link link-hover">SUNDAY – 09:00 – 22:00</a>
+          <h6 className="font-semibold text-foreground">OPENING HOURS</h6>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">MONDAY – Closed</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">TUESDAY – 09:00 – 22:00</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">WEDNESDAY – 09:00 – 22:00</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">THURSDAY – 09:00 – 22:00</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">FRIDAY – 09:00 – 01:00 ✦</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">SATURDAY – 12:00 – 01:00 ✦</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">SUNDAY – 09:00 – 22:00</a>
         </nav>
         <nav className="leading-relaxed">
-          <h6 className="footer-title">LATEST POSTS</h6>
-          <a className="link link-hover">Discover the Art of Brewing</a>
-          <a className="link link-hover">Hidden Cafés Around Town</a>
-          <a className="link link-hover">Why Third-Wave Coffee Matters</a>
-          <a className="link link-hover">Brewing Passion, One Cup at a Time</a>
+          <h6 className="font-semibold text-foreground">LATEST POSTS</h6>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">Discover the Art of Brewing</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">Hidden Cafés Around Town</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">Why Third-Wave Coffee Matters</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">Brewing Passion, One Cup at a Time</a>
         </nav>
         <nav className="leading-relaxed">
-          <h6 className="footer-title">hello@flavoredcoffee.com</h6>
-          <a className="link link-hover">+62 812-3456-7890</a>
-          <a className="link link-hover">
+          <h6 className="font-semibold text-foreground">hello@flavoredcoffee.com</h6>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">+62 812-3456-7890</a>
+          <a className="link link-hover text-muted-foreground hover:text-foreground">
             Jl. Kopi Senja No. 123, Bandung, Indonesia.
           </a>
         </nav>
       </footer>
 
-      <footer className="footer sm:footer-horizontal text-white items-center p-4 bg-black/90 backdrop-blur-xs ">
+      <footer className="footer sm:footer-horizontal bg-muted text-foreground items-center p-4 border-t border-border">
         <aside className="grid-flow-col items-center">
           <svg
             width="36"

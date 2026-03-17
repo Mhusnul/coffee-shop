@@ -12,19 +12,19 @@ function Service({ id }) {
   return (
     <div
       id={id}
-      className="min-h-screen flex flex-col justify-center items-center"
+      className="min-h-screen flex flex-col justify-center items-center bg-background"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-        <div className=" bg-[#F0F2BD] hover:bg-[#B2CD9C] hover:text-[#F0F2BD] bg-backdrop-blur-lg p-5 flex items-center justify-center transition-colors duration-300">
+        <div className="bg-accent hover:bg-primary hover:text-accent-foreground p-5 flex items-center justify-center transition-colors duration-300 rounded-lg">
           <div>
-            <h3 className="uppercase font-bold mb-3 text-[#4B352A] ">
+            <h3 className="uppercase font-bold mb-3 text-accent-foreground">
               Discover the Art of Brewing
             </h3>
-            <p className="mb-3 text-sm ">
+            <p className="mb-3 text-sm text-accent-foreground">
               Explore techniques that transform ordinary beans into
               extraordinary moments. Your perfect cup starts here.
             </p>
-            <p className="uppercase font-semibold text-sm text-[#4B352A] flex items-center">
+            <p className="uppercase font-semibold text-sm text-accent-foreground flex items-center">
               Read More <ArrowBigRightDash size={28} strokeWidth={0.75} />
             </p>
           </div>
@@ -37,16 +37,16 @@ function Service({ id }) {
           />
         </div>
 
-        <div className=" bg-[#B2CD9C] hover:bg-[#F0F2BD] hover:text-[#B2CD9C] p-5 flex items-center justify-center transition-colors duration-300">
+        <div className="bg-primary hover:bg-accent hover:text-primary text-primary-foreground p-5 flex items-center justify-center transition-colors duration-300 rounded-lg">
           <div>
-            <h3 className="uppercase font-bold mb-3 text-[#4B352A] ">
+            <h3 className="uppercase font-bold mb-3">
               Master Every Pour
             </h3>
-            <p className="mb-3 text-sm ">
+            <p className="mb-3 text-sm">
               Learn how to bring out the true flavor of coffee with expert
               brewing methods. Easy steps, perfect results.
             </p>
-            <p className="uppercase font-semibold text-sm text-[#4B352A] flex items-center">
+            <p className="uppercase font-semibold text-sm flex items-center">
               Read More <ArrowBigRightDash size={28} strokeWidth={0.75} />
             </p>
           </div>
@@ -59,11 +59,11 @@ function Service({ id }) {
           />
         </div>
 
-        <div className=" bg-[#B2CD9C] hover:bg-[#F0F2BD] hover:text-[#F0F2BD] flex items-center justify-center h-80 overflow-hidden">
+        <div className="bg-muted hover:bg-card flex items-center justify-center h-80 overflow-hidden rounded-lg transition-colors duration-300">
           <img className="" src={grid1} alt="" />
         </div>
 
-        <div className=" bg-[#B2CD9C] hover:bg-[#F0F2BD] hover:text-[#B2CD9C] flex items-center justify-center h-80 transition-colors duration-300">
+        <div className="bg-primary hover:bg-accent text-primary-foreground flex items-center justify-center h-80 transition-colors duration-300 rounded-lg">
           <motion.img
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
@@ -73,20 +73,20 @@ function Service({ id }) {
           />
         </div>
 
-        <div className=" bg-[#F0F2BD] flex items-center justify-center h-80 overflow-hidden">
+        <div className="bg-accent flex items-center justify-center h-80 overflow-hidden rounded-lg">
           <img className="" src={grid1} alt="" />
         </div>
 
-        <div className=" bg-[#F0F2BD] hover:bg-[#B2CD9C] hover:text-[#F0F2BD] p-5 flex items-center justify-center transition-colors duration-300">
+        <div className="bg-accent hover:bg-primary hover:text-primary-foreground text-accent-foreground p-5 flex items-center justify-center transition-colors duration-300 rounded-lg">
           <div>
-            <h3 className="uppercase font-bold mb-3 text-[#4B352A] ">
+            <h3 className="uppercase font-bold mb-3">
               From Bean to Brew
             </h3>
-            <p className="mb-3 text-sm ">
+            <p className="mb-3 text-sm">
               Trace the journey of every bean — from ethically sourced farms to
               your favorite cup. Taste the story behind every sip.
             </p>
-            <p className="uppercase font-semibold text-sm text-[#4B352A] flex items-center">
+            <p className="uppercase font-semibold text-sm flex items-center">
               Read More <ArrowBigRightDash size={28} strokeWidth={0.75} />
             </p>
           </div>

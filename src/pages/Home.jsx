@@ -10,7 +10,7 @@ import Footer from "../components/layout/Footer";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-[#4B352A] -z-50">
+    <div className="min-h-screen bg-background text-foreground -z-50">
       <Navbar />
       <Hero id="home" />
       <CoffeeBuild id="coffee-menu" />

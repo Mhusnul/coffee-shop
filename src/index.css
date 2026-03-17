@@ -1,8 +1,67 @@
-@import "tailwindcss";
-@plugin "daisyui" {
-  themes: light;
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    /* shadcn/ui Coffee-inspired light theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.6%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.6%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.6%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    /* Coffee-inspired primary color (warm brown) */
+    --primary: 25 50% 45%;
+    --primary-foreground: 0 0% 100%;
+    /* Secondary accent */
+    --secondary: 25 35% 65%;
+    --secondary-foreground: 0 0% 3.6%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 25 50% 45%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.6%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.6%;
+    --popover-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    /* Dark mode primary (warmer coffee tone) */
+    --primary: 25 60% 55%;
+    --primary-foreground: 0 0% 3.6%;
+    --secondary: 25 40% 75%;
+    --secondary-foreground: 0 0% 3.6%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 25 60% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter Var', sans-serif;
+  }
 }

@@ -67,11 +67,11 @@ function CoffeeBuild() {
   ];
 
   return (
-    <div className="text-center py-5 px-5  min-h-screen flex flex-col justify-center items-center">
-      <h1 className="text-[#B2CD9C] font-semibold italic">What Happens Here</h1>
-      <p className="text-4xl font-bold text-[#F0F2BD]">COFFE BUILD YOUR BASE</p>
-      <hr className=" w-16 mt-4 text-[#F0F2BD] mx-auto" />
-      <div className=" md:flex justify-center items-center my-5">
+    <div className="text-center py-5 px-5 min-h-screen flex flex-col justify-center items-center bg-muted">
+      <h1 className="text-muted-foreground font-semibold italic">What Happens Here</h1>
+      <p className="text-4xl font-bold text-foreground">COFFE BUILD YOUR BASE</p>
+      <hr className="w-16 mt-4 border-border mx-auto" />
+      <div className="md:flex justify-center items-center my-5">
         {/* Left Side */}
         <motion.div
           ref={ref}
@@ -89,13 +89,13 @@ function CoffeeBuild() {
               <Icon
                 size={80}
                 strokeWidth={0.75}
-                className="text-[#F0F2BD] mx-auto"
+                className="text-primary mx-auto"
               />
               <div className="w-80">
-                <h1 className="text-lg font-bold uppercase text-[#F0F2BD] ">
+                <h1 className="text-lg font-bold uppercase text-foreground">
                   {title}
                 </h1>
-                <p className="text-[#B2CD9C]">{desc}</p>
+                <p className="text-muted-foreground">{desc}</p>
               </div>
             </motion.div>
           ))}
@@ -127,13 +127,13 @@ function CoffeeBuild() {
               <Icon
                 size={80}
                 strokeWidth={0.75}
-                className="text-[#F0F2BD] mx-auto"
+                className="text-primary mx-auto"
               />
               <div className="w-80">
-                <h1 className="text-lg font-bold uppercase text-[#F0F2BD] ">
+                <h1 className="text-lg font-bold uppercase text-foreground">
                   {title}
                 </h1>
-                <p className="text-[#B2CD9C]">{desc}</p>
+                <p className="text-muted-foreground">{desc}</p>
               </div>
             </motion.div>
           ))}

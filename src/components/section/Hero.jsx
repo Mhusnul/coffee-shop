@@ -15,8 +15,8 @@ function Hero({ id }) {
         backgroundImage: `url(${coffe})`,
       }}
     >
-      <div className="hero-overlay"></div>
-      <div className="hero-content text-[#F0F2BD] text-center">
+      <div className="hero-overlay bg-background/40"></div>
+      <div className="hero-content text-foreground text-center">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -29,7 +29,7 @@ function Hero({ id }) {
           <p className="mb-5 italic">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
           </p>
-          <button className="btn btn-primary">Read more</button>
+          <button className="px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg font-semibold transition-colors">Read more</button>
         </motion.div>
       </div>
     </div>

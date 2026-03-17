@@ -57,22 +57,22 @@ function Quotes() {
               <motion.div
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.95 }}
-                className="absolute bg-[#4B352A]/50 backdrop-blur-sm rounded-xl p-8 max-w-xl text-center text-[#F0F2BD]"
+                className="absolute bg-background/80 backdrop-blur-sm rounded-xl p-8 max-w-xl text-center text-foreground border border-border"
               >
-                <div className="mb-2">
-                  <Quote color="#F0F2BD" strokeWidth={2} />
+                <div className="mb-2 flex justify-center">
+                  <Quote className="text-primary" strokeWidth={2} />
                 </div>
-                <p className="italic text-lg">{item.quote}</p>
-                <p className="mt-4 font-semibold">{item.author}</p>
+                <p className="italic text-lg text-foreground">{item.quote}</p>
+                <p className="mt-4 font-semibold text-primary">{item.author}</p>
               </motion.div>
 
               {/* Navigation */}
               <div className="absolute left-8 right-8 top-1/2 flex justify-between transform -translate-y-1/2">
-                <a href={`#slide${prev + 1}`} className="btn btn-circle">
-                  <ChevronFirst color="#ffffff" strokeWidth={1} />
+                <a href={`#slide${prev + 1}`} className="btn btn-circle bg-primary text-primary-foreground hover:bg-primary/90 border-0">
+                  <ChevronFirst strokeWidth={1} />
                 </a>
-                <a href={`#slide${next + 1}`} className="btn btn-circle">
-                  <ChevronLast color="#ffffff" strokeWidth={1} />
+                <a href={`#slide${next + 1}`} className="btn btn-circle bg-primary text-primary-foreground hover:bg-primary/90 border-0">
+                  <ChevronLast strokeWidth={1} />
                 </a>
               </div>
             </div>
