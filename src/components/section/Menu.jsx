@@ -93,17 +93,17 @@ function Menu({ id }) {
   return (
     <div
       id={id}
-      className="min-h-screen flex flex-col items-center justify-center relative"
+      className="min-h-screen flex flex-col items-center justify-center relative bg-background"
     >
       <div className="z-50">
         <div className="text-center mb-8">
-          <h1 className="text-[#B2CD9C] font-semibold italic">
+          <h1 className="text-muted-foreground font-semibold italic">
             What Happens Here
           </h1>
-          <p className="text-4xl font-bold text-[#F0F2BD] uppercase">
+          <p className="text-4xl font-bold text-foreground uppercase">
             explore our menu
           </p>
-          <hr className=" w-16 mt-4 text-[#F0F2BD] mx-auto" />
+          <hr className="w-16 mt-4 mx-auto" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
           <motion.div
@@ -115,15 +115,15 @@ function Menu({ id }) {
             {drinks.map((item, index) => (
               <motion.div
                 variants={itemVariants}
-                className="flex justify-between mb-2"
+                className="flex justify-between mb-2 p-3 rounded-lg bg-card hover:bg-muted transition-colors"
                 key={index}
               >
                 <div className="">
-                  <h2 className="text-[#F0F2BD] font-semibold">{item.name}</h2>
-                  <hr className="text-[#F0F2BD]" />
-                  <p className="text-[#B2CD9C]">{item.description}</p>
+                  <h2 className="text-foreground font-semibold">{item.name}</h2>
+                  <hr />
+                  <p className="text-muted-foreground">{item.description}</p>
                 </div>
-                <div className="text-right text-[#F0F2BD]">
+                <div className="text-right text-primary font-semibold">
                   <p>{item.price}</p>
                 </div>
               </motion.div>
@@ -138,15 +138,15 @@ function Menu({ id }) {
             {desserts.map((item, index) => (
               <motion.div
                 variants={itemVariants}
-                className="flex justify-between mb-2"
+                className="flex justify-between mb-2 p-3 rounded-lg bg-card hover:bg-muted transition-colors"
                 key={index}
               >
                 <div className="">
-                  <h2 className="text-[#F0F2BD] font-semibold">{item.name}</h2>
-                  <hr className="text-[#F0F2BD]" />
-                  <p className="text-[#B2CD9C]">{item.description}</p>
+                  <h2 className="text-foreground font-semibold">{item.name}</h2>
+                  <hr />
+                  <p className="text-muted-foreground">{item.description}</p>
                 </div>
-                <div className="text-right text-[#F0F2BD]">
+                <div className="text-right text-primary font-semibold">
                   <p>{item.price}</p>
                 </div>
               </motion.div>
