@@ -16,7 +16,7 @@ function Footer({ id }) {
         backgroundPosition: "center",
       }}
     >
-      <footer className="footer sm:footer-horizontal bg-card/50 text-foreground p-10 backdrop-blur-sm border-t border-border">
+      <footer className="footer sm:footer-horizontal bg-card/50 text-foreground p-10 backdrop-blur-sm border-t">
         <div id={id} className="relative w-full">
           {/* Content */}
           <motion.div
@@ -65,7 +65,7 @@ function Footer({ id }) {
         </nav>
       </footer>
 
-      <footer className="footer sm:footer-horizontal bg-muted text-foreground items-center p-4 border-t border-border">
+      <footer className="footer sm:footer-horizontal bg-muted text-foreground items-center p-4 border-t">
         <aside className="grid-flow-col items-center">
           <svg
             width="36"

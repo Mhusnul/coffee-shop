@@ -70,7 +70,7 @@ function CoffeeBuild() {
     <div className="text-center py-5 px-5 min-h-screen flex flex-col justify-center items-center bg-muted">
       <h1 className="text-muted-foreground font-semibold italic">What Happens Here</h1>
       <p className="text-4xl font-bold text-foreground">COFFE BUILD YOUR BASE</p>
-      <hr className="w-16 mt-4 border-border mx-auto" />
+      <hr className="w-16 mt-4 mx-auto" />
       <div className="md:flex justify-center items-center my-5">
         {/* Left Side */}
         <motion.div

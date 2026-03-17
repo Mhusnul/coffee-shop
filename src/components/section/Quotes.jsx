@@ -57,7 +57,7 @@ function Quotes() {
               <motion.div
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.95 }}
-                className="absolute bg-background/80 backdrop-blur-sm rounded-xl p-8 max-w-xl text-center text-foreground border border-border"
+                className="absolute bg-background/80 backdrop-blur-sm rounded-xl p-8 max-w-xl text-center text-foreground border"
               >
                 <div className="mb-2 flex justify-center">
                   <Quote className="text-primary" strokeWidth={2} />

@@ -103,7 +103,7 @@ function Menu({ id }) {
           <p className="text-4xl font-bold text-foreground uppercase">
             explore our menu
           </p>
-          <hr className="w-16 mt-4 border-border mx-auto" />
+          <hr className="w-16 mt-4 mx-auto" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
           <motion.div
@@ -120,7 +120,7 @@ function Menu({ id }) {
               >
                 <div className="">
                   <h2 className="text-foreground font-semibold">{item.name}</h2>
-                  <hr className="border-border" />
+                  <hr />
                   <p className="text-muted-foreground">{item.description}</p>
                 </div>
                 <div className="text-right text-primary font-semibold">
@@ -143,7 +143,7 @@ function Menu({ id }) {
               >
                 <div className="">
                   <h2 className="text-foreground font-semibold">{item.name}</h2>
-                  <hr className="border-border" />
+                  <hr />
                   <p className="text-muted-foreground">{item.description}</p>
                 </div>
                 <div className="text-right text-primary font-semibold">

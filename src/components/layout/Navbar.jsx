@@ -9,7 +9,7 @@ function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-full fixed top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
+    <div className="w-full fixed top-0 z-50 bg-background/80 backdrop-blur-sm border-b">
       <div className="flex justify-between items-center p-4 max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-1">
@@ -44,7 +44,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-background border-t border-border text-foreground px-4 py-4 space-y-3 text-center">
+        <div className="md:hidden bg-background border-t text-foreground px-4 py-4 space-y-3 text-center">
           <a
             href="#home"
             onClick={toggleMenu}
